@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Loading" customModule="QuizChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJd-88-li5">
+                    <rect key="frame" x="90" y="231.5" width="140" height="105"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Aj0-J6-M0Q">
+                            <rect key="frame" x="51.5" y="16" width="37" height="37"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Bh-8b-VPR">
+                            <rect key="frame" x="30.5" y="69" width="79.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Aj0-J6-M0Q" firstAttribute="centerX" secondItem="DJd-88-li5" secondAttribute="centerX" id="MpK-vx-ahT"/>
+                        <constraint firstAttribute="height" constant="105" id="S9b-GX-4zU"/>
+                        <constraint firstItem="1Bh-8b-VPR" firstAttribute="centerX" secondItem="DJd-88-li5" secondAttribute="centerX" id="c0x-k1-kK3"/>
+                        <constraint firstAttribute="width" constant="140" id="mMY-kS-3UJ"/>
+                        <constraint firstItem="1Bh-8b-VPR" firstAttribute="top" secondItem="Aj0-J6-M0Q" secondAttribute="bottom" constant="16" id="qQ7-zm-Lpq"/>
+                        <constraint firstItem="Aj0-J6-M0Q" firstAttribute="top" secondItem="DJd-88-li5" secondAttribute="top" constant="16" id="vEb-1O-BXs"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="DJd-88-li5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="CLr-4s-jwl"/>
+                <constraint firstItem="DJd-88-li5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KuF-us-Orv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="130"/>
+        </view>
+    </objects>
+</document>
